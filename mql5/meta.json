@@ -1,0 +1,11 @@
+{
+  "name": "mql5.com",
+  "type": "import",
+  "author": "trading_peter",
+  "version": "1.0.0",
+  "description": "Imports the economic calendar from mql5.com.",
+  "sourceFile": "mql5.go",
+  "language": "golang",
+  "runOnStartup": true,
+  "schedule": "0 * * * *"
+}
