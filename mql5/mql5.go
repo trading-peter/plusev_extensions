@@ -104,6 +104,13 @@ func getValue[T mapValue](key string, data map[string]any, defaultValue ...T) T 
 		var defaultValue T
 		return defaultValue
 	}
+
+	var zero T
+
+	if len(defaultValue) > 0 && value == zero {
+		return defaultValue[0]
+	}
+
 	return value
 }
 
